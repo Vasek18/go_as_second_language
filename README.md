@@ -12,3 +12,13 @@ if val, ok := myMap["foo"]; ok {
     ...
 }
 ```
+
+## String to int
+```
+number, _ := strconv.Atoi(str)
+```
+
+## Append to array
+```
+arr = append(arr, n)
+```
