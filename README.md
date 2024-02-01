@@ -22,3 +22,16 @@ number, _ := strconv.Atoi(str)
 ```
 arr = append(arr, n)
 ```
+
+## Remove last element of array
+```
+stack = stack[:len(stack)-1]
+```
+
+## Return error
+```
+func fooBar() error {
+    ...
+    return errors.New("It's the wrong castle")
+}
+```
