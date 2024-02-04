@@ -9,7 +9,7 @@ matrix := [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
 ## Check if a map has a value
 ```
 if val, ok := myMap["foo"]; ok {
-    ...
+    // ...
 }
 ```
 
@@ -31,7 +31,31 @@ stack = stack[:len(stack)-1]
 ## Return error
 ```
 func fooBar() error {
-    ...
+    // ...
     return errors.New("It's the wrong castle")
 }
+```
+
+## Foreach
+```
+for i, n := range nums {
+    // ...
+}
+```
+
+## Function argument with "any" type
+```
+func foo(value interface{}) error {
+    // ...
+}
+```
+
+## Json encode
+```
+jsonString, err := json.Marshal(value)
+```
+
+## Json decode
+```
+err = json.Unmarshal(jsonString, &value)
 ```
