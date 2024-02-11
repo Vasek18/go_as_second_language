@@ -59,3 +59,9 @@ jsonString, err := json.Marshal(value)
 ```
 err = json.Unmarshal(jsonString, &value)
 ```
+
+## Strings join / implode
+```
+answer := strings.Join(items, ", ")
+```
+
