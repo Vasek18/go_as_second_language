@@ -1,34 +1,34 @@
-# go_as_second_language
+# Go as second language
 Tips and tricks for a seamless transition to Go from your primary programming language
 
-## Init 2D array of numbers with preset values
+## How to init a 2D array of numbers with predefined values in Go
 ```
 matrix := [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
 ```
 
-## Check if a map has a value
+## How to determine if a value exists in a map in Go
 ```
 if val, ok := myMap["foo"]; ok {
     // ...
 }
 ```
 
-## String to int
+## How to convert strings to integers in Go
 ```
 number, _ := strconv.Atoi(str)
 ```
 
-## Append to array
+## How to append a value to an array in Go
 ```
 arr = append(arr, n)
 ```
 
-## Remove last element of array
+## How to remove last element of array in Go
 ```
 stack = stack[:len(stack)-1]
 ```
 
-## Return error
+## How to return error in Go
 ```
 func fooBar() error {
     // ...
@@ -36,32 +36,50 @@ func fooBar() error {
 }
 ```
 
-## Foreach
+## How to write foreach loop in Go
 ```
 for i, n := range nums {
     // ...
 }
 ```
 
-## Function argument with "any" type
+## How to write while loop in Go
+```
+for isValid {
+    // ...
+}
+```
+
+## How to write for loop with counter in Go
+```
+for i := 0; i < n; i++ {
+    // ...
+}
+```
+
+## Function argument with "any" type in Go
 ```
 func foo(value interface{}) error {
     // ...
 }
 ```
 
-## Json encode
+## Json encode in Go
 ```
 jsonString, err := json.Marshal(value)
 ```
 
-## Json decode
+## Json decode in Go
 ```
 err = json.Unmarshal(jsonString, &value)
 ```
 
-## Strings join / implode
+## How to implode (join) strings in Go
 ```
 answer := strings.Join(items, ", ")
 ```
 
+## How to print something in Go
+```
+fmt.Println("Hello world")
+```
