@@ -23,6 +23,13 @@ number, _ := strconv.Atoi(str)
 arr = append(arr, n)
 ```
 
+## How to prepend a value to an array in Go
+```
+values := []string{"World", "!"}
+prependValue := "Hello"
+values = append([]string{prependValue}, values...)
+```
+
 ## How to remove last element of array in Go
 ```
 stack = stack[:len(stack)-1]
@@ -82,4 +89,19 @@ answer := strings.Join(items, ", ")
 ## How to print something in Go
 ```
 fmt.Println("Hello world")
+```
+
+## Ellipsis, variadic functions, variable number of arguments in function in Go
+```
+func foo(nums ...int) {
+	// ...
+	for _, num := range nums {
+		// ...
+	}
+	// ...
+}
+
+// ...
+
+foo(1, 2, 3)
 ```
